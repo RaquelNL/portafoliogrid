@@ -1,0 +1,200 @@
+  body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: pink;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Gabarito', cursive;
+  }
+  
+  .header {
+    background-color: plum;
+    color: black;
+    padding: 40px;
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+  }
+  
+  .logo {
+    font-family: 'Gabarito', cursive;
+    margin: 0;
+    padding: 0;
+    font-size: 32px;
+    font-style: italic;
+  }
+  
+  .menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .menu-item {
+    margin-right: 20px;
+  }
+  
+  .menu-item a {
+    text-decoration: none;
+    color: black;
+    transition-duration: 0.3s;
+    font-weight: bold;
+  }
+  .container {
+    display: flex;
+    align-items: stretch;
+    height: 100vh;
+  }
+  
+  .sidebar {
+    background-color: plum;
+    color: black;
+    width: 250px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .sidebar-header {
+    margin-bottom: 40px;
+  }
+  
+  .sidebar_head {
+    text-align: center;
+    font-size: 20px;
+  }
+  
+  .sidebar-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .sidebar-menu li {
+    margin-bottom: 10px;
+  }
+  
+  .sidebar-menu a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  
+  .boton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 10px;
+    margin: 5px 0;
+    background-color: pink;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: calc(100% - 10px);
+  }
+
+ /* El resto de tus estilos aquí */
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Cambio aquí para mostrar 4 columnas */
+  gap: 20px;
+  padding: 20px;
+  margin: 0 50px;
+  position: relative;
+  z-index: 2;
+}
+
+.column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  text-align: center;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: lightblue;
+}
+
+.card img {
+  width: 250px;
+  max-height: 180px;
+  border-radius: 10px;
+}
+
+.card h4 {
+  font-size: 17px;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.card p {
+  font-size: 15px;
+  color: black;
+  margin: 10px 0;
+}
+
+  .footer {
+    background-color: plum;
+    color: black;
+    text-align: left;
+    padding: 20px;
+    font-size: 24px;
+    font-family: 'Gabarito', cursive;
+    font-style: italic;
+  }
+
+  @media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-item {
+        margin: 10px 0;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        position: relative; 
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        align-items: flex-start;
+    }
+
+    .sidebar-menu {
+        text-align: left;
+    }
+
+    .footer {
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+}
